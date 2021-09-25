@@ -1,0 +1,27 @@
+.flash-sale-book-wrapper {
+  .img-flash-sale {
+    display: flex;
+    align-items: center;
+    margin: 16px auto;
+    width: 100%;
+    height: 34px;
+  }
+
+  .MuiTabPanel-root {
+    padding: 0 !important;
+  }
+
+  .PrivateTabIndicator-colorSecondary-15 {
+    background-color: #fc820a;
+  }
+
+  .PrivateTabIndicator-colorSecondary-17 {
+    background-color: #fc820a;
+  }
+
+  .MuiTabs-flexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

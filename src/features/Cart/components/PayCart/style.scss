@@ -1,0 +1,58 @@
+.pay-cart-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 72px;
+    padding: 0 0 8px 0;
+   background-color: #fff;
+  .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+  }
+
+  .text {
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #28282b;
+  }
+  .money {
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #28282b;
+  }
+  .border {
+    border-bottom: 1px solid #ebebf0;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 1px;
+  }
+  .btn-pay-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    background: #fc820a;
+    border-radius: 20px;
+
+    span {
+      font-family: Inter;
+
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+
+      color: #ffffff;
+
+      margin: 8px 12px;
+    }
+  }
+}

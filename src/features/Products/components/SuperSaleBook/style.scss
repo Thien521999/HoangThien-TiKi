@@ -1,0 +1,62 @@
+
+.super-sale-book-wrapper {
+  .title-super-sale-book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    height: 24px;
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    
+  }
+  
+  .slick-arrow  {
+    display: none !important;
+  }
+  
+  .slick-track {
+    display: flex;
+    flex-direction: row nowrap;
+    
+    .slick-slide {
+      box-sizing: border;
+      // margin: 0 4px;
+      border: 4px solid transparent;
+    }
+  }
+  
+  .paper {
+    min-height: 170px; 
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .slick-dots{
+    bottom: -42px !important;
+  }
+}
+// @media only screen and (max-width: 375px) {
+//   .slick-dots{
+//     bottom: -40px !important;
+//   }
+// }
+
+@media only screen and (min-width: 360px) and (max-width: 736px){
+  .slick-dots{
+    bottom: -40px !important;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 736px){
+  .slick-dots{
+    bottom: -20px !important;
+  }
+}
+
+

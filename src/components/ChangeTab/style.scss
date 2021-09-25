@@ -1,0 +1,17 @@
+.change-tab-wrapper {
+    position: fixed;
+    border-top: 1px solid #ebebf0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    padding: 0 4px;
+    background-color:  #fff;
+
+    .css-13b5x29-MuiButtonBase-root-MuiTab-root.Mui-selected {
+        color: #FC820A;
+    }
+
+    .css-1aquho2-MuiTabs-indicator {
+        background-color: #FC820A !important;
+    }
+}

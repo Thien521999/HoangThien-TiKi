@@ -1,0 +1,27 @@
+.banner-wrapper {
+  width: 100%;
+  .space {
+    width: 100%;
+    height: 56px;
+    background-color: #c7e9f9;
+  }
+  .banner-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    .banner_big {
+      width: 100%;
+      height: 216px;
+    }
+
+    .banner_small {
+      margin-top: 16px;
+      width: 100%;
+      height: 34px;
+    }
+  }
+}

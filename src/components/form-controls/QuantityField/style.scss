@@ -1,0 +1,25 @@
+.box {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  max-width: 150px;
+  .icon-remove,
+  .icon-add {
+    border: 1px solid #c4c4cf;
+    border-radius: 4px;
+    margin-right: 4px;
+    padding: 4px;
+    width: 40px;
+  }
+  .icon-remove {
+    margin-right: 4px;
+  }
+  .icon-add {
+    margin-left: 4px;
+  }
+
+  .MuiOutlinedInput-inputMarginDense:hover {
+    overflow: hidden;
+  }
+}
+

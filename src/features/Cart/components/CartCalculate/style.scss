@@ -1,0 +1,31 @@
+.cart-calculate-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  .provisional,
+  .transport-fee,
+  .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .text {
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #28282b;
+  }
+
+  .money {
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #28282b;
+  }
+}

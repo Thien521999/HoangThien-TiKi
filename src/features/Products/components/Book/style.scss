@@ -1,0 +1,111 @@
+.book-wrapper {
+  cursor: pointer;
+  // min-height: 300px;
+
+  .text-tiki-now {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    height: 16px;
+
+    .tiki {
+      width: 23.75px;
+      color: #1ba8ff;
+    }
+    .now {
+      margin-top: 5px;
+    }
+  }
+
+  .name-book {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #27272a;
+  }
+
+  .start {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    height: 12px;
+    font-size: 10px;
+    line-height: 12px;
+    font-family: Inter;
+
+    .rating_average {
+      margin: 0 4px;
+      color: #808089;
+    }
+  }
+
+  .info-price {
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+    font-family: Inter;
+    font-weight: bold;
+
+    .price {
+      color: #27272a;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .discount {
+      margin-left: 8px;
+      border-radius: 4px;
+      padding: 4px;
+
+      font-size: 12px;
+      line-height: 16px;
+      background-color: #ff424f;
+      color: #fff;
+    }
+  }
+
+  .original_price {
+    display: flex;
+    align-items: center;
+    text-decoration-line: line-through;
+    margin: 0 8px;
+    font-family: Inter;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #808089;
+  }
+}
+
+.MuiButton-fullWidth {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.super-sale-book-wrapper {
+  .book-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    min-height: 154px !important;
+  }
+}
+
+// @media only screen and (max-width: 480px) {
+//   .super-sale-book-wrapper {
+//     .book-wrapper {
+//       display: grid;
+//       grid-template-columns: 1fr 1fr;
+//       grid-template-rows: auto;
+//       min-height: 154px !important;
+//     }
+//   }
+// }

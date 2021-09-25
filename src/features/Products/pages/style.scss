@@ -1,0 +1,43 @@
+.unique-sale-book {
+  .MuiContainer-root {
+    padding: 16px 12px !important;
+  }
+}
+
+.super-sale-book {
+  padding: 16px;
+  // height: 300px;
+  background-color: #f7c65a;
+
+  .MuiContainer-root {
+    padding: 0;
+  }
+}
+
+.flash-sale-book {
+  padding-bottom: 90px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  .super-sale-book {
+    height: 274px !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px){
+  .super-sale-book {
+    height: 260px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .super-sale-book {
+    height: 276px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .super-sale-book {
+    height: 314px !important;
+  }
+}

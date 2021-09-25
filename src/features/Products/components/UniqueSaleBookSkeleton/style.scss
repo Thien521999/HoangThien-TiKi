@@ -1,0 +1,77 @@
+.unique-sale-book-skeleton-wrapper {
+  .paper-skeleton {
+    width: 100%;
+    height: 118px;
+  }
+}
+
+// @media only screen and (min-width: 1024px) {
+//     .img-skeleton {
+//       width: 306px !important;
+//       height: 200px !important;
+//     }
+//   }
+
+//   @media only screen and (min-width: 320px) and (max-width: 568px){
+//     .super-sale-book {
+//       height: 260px;
+//     }
+//   }
+
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px) {
+  .img-skeleton {
+    width: 306px !important;
+    height: 200px !important;
+  }
+}
+/*Ipad dọc(768 x 1024)*/
+//   @media only screen and (min-width: 480px) and (max-width: 736px){
+//     .img-skeleton {
+//         width: 179px !important;
+//         height: 200px !important;
+//       }
+// }
+
+// @media screen and (min-width: 414px) {
+//     .img-skeleton {
+//         width: 179px !important;
+//         height: 200px !important;
+//       }
+// }
+  
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 480px) {
+    .img-skeleton {
+        width: 159px !important;
+        height: 200px !important;
+      }
+}
+
+@media screen and (min-width: 414px) and (max-width: 736px) {
+    .img-skeleton {
+        width: 179px !important;
+        height: 200px !important;
+      }
+}
+/*Iphone(480 x 640)*/
+@media screen and (max-width: 320px) {
+    .img-skeleton {
+        width: 132px !important;
+        height: 200px !important;
+      }
+}
+/*Smart phone nhỏ*/
+@media screen and (max-width: 240px) {
+    .img-skeleton {
+        width: 132px !important;
+        height: 200px !important;
+      }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px){
+    .img-skeleton {
+        width: 272px !important;
+        height: 272px !important;
+      }
+}
