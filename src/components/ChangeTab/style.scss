@@ -1,17 +1,39 @@
+
 .change-tab-wrapper {
-    position: fixed;
-    border-top: 1px solid #ebebf0;
-    left: 0;
-    right: 0;
-    bottom: 0px;
-    padding: 0 4px;
-    background-color:  #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  background-color: #fff;
+  box-sizing: border-box;
 
-    .css-13b5x29-MuiButtonBase-root-MuiTab-root.Mui-selected {
-        color: #FC820A;
-    }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px;
+  left: 0;
+  right: 0;
+  height: 60px;
 
-    .css-1aquho2-MuiTabs-indicator {
-        background-color: #FC820A !important;
+  .btn-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 60px;
+
+    margin: auto;
+    text-decoration: none;
+    color: #81818a;
+
+    .text-tab {
+        padding-bottom: 8px;
     }
+    
+  }
+
+  .active {
+    border-top: 2px solid #fc820a;
+    width: 100%;
+    color: #fc820a;
+  }
 }

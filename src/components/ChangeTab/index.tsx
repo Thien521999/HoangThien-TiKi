@@ -6,6 +6,7 @@ import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import React from 'react';
 import { useHistory } from 'react-router';
+import { NavLink } from 'react-router-dom';
 // others
 import './style.scss';
 
@@ -33,12 +34,18 @@ const ChangeTab = () => {
   };
   return (
     <Box className="change-tab-wrapper">
-      <Container>
-        <Tabs value={value} onChange={handleChange} aria-label="icon label tabs example" centered>
-          <Tab icon={<HomeIcon />} label="Trang chủ" onClick={handleClickHome} />
-          <Tab icon={<AddShoppingCartIcon />} label="Giỏ hàng" onClick={handleClickCart} />
-        </Tabs>
-      </Container>
+      <NavLink to="/" exact className="btn-tab">
+        <div className="icon-tab">
+          <HomeIcon className="icon-home" />
+        </div>
+        <div className="text-tab">Trang Chủ</div>
+      </NavLink>
+      <NavLink to="/cart" className="btn-tab">
+        <div className="icon-tab">
+          <AddShoppingCartIcon />
+        </div>
+        <div className="text-tab">Giỏ hàng</div>
+      </NavLink>
     </Box>
   );
 };
