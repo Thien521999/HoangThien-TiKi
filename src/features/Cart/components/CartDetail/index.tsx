@@ -44,9 +44,8 @@ const CartDetail: React.FC<BookProps> = ({ book }) => {
     dispatch(action);
   };
 
-  const handleRemoveBook = (book: any) => {
-    console.log(book);
-
+  const handleRemoveBook = () => {
+    // console.log(book?.id);
     // const idNeedToRemove = book?.id;
     // const action = removeFromCart(idNeedToRemove);
     // dispatch(action);

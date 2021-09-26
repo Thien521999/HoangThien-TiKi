@@ -36,14 +36,13 @@ const Banner = () => {
         setIndex(0);
         currentIndex.current = 0;
       }
-    }, 5000);
+    }, 6000);
 
     return () => clearInterval(loop);
   }, [listBanner.length]);
 
   return (
     <div className="banner-wrapper">
-      <div className="space"></div>
       <div className="banner-image">
         <img className="banner_big" src={listBanner[index]?.image_url} alt={listBanner[index]?.title} />
         <img className="banner_small" src={banner} alt="big" />

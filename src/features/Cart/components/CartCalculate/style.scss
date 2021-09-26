@@ -15,9 +15,23 @@
     font-family: Inter;
     font-weight: normal;
     font-size: 14px;
+    height: 20px;
     line-height: 20px;
 
     color: #28282b;
+    .icon-infos {
+      margin-left: 5.33px;
+      .css-i4bv87-MuiSvgIcon-root {
+        margin-top: 5px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .money {

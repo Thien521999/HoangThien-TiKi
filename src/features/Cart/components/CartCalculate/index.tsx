@@ -1,5 +1,6 @@
 // libs
 import React from 'react';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 // constant
 import { TRANSPORT_FEE } from '../../../../constants';
 // until
@@ -20,7 +21,12 @@ const CartCalculate: React.FC<CartCalculateProps> = ({ cartProvisionalTotal, car
         <span className="money">{formatPrice(cartProvisionalTotal)}</span>
       </div>
       <div className="transport-fee">
-        <span className="text">Phí vận chuyển</span>
+        <span className="text text-wrapper">
+          Phí vận chuyển
+          <span className="icon-infos">
+            <InfoOutlinedIcon />
+          </span>
+        </span>
         <span className="money">{formatPrice(TRANSPORT_FEE)}</span>
       </div>
       <div className="total">
