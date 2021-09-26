@@ -11,12 +11,24 @@
     padding: 0 !important;
   }
 
-  .PrivateTabIndicator-colorSecondary-15 {
+  // .PrivateTabIndicator-colorSecondary {
+  //   background-color: #fc820a;
+  // }
+
+  // .PrivateTabIndicator-colorSecondary-17 {
+  //   background-color: #fc820a;
+  // }
+
+  // .PrivateTabIndicator-colorSecondary-100 {
+  //   background-color: #fc820a;
+  // }
+
+  .css-1aquho2-MuiTabs-indicator {
     background-color: #fc820a;
   }
 
-  .PrivateTabIndicator-colorSecondary-17 {
-    background-color: #fc820a;
+  .MuiTab-textColorSecondary.Mui-selected {
+    color: #fc820a;
   }
 
   .MuiTabs-flexContainer {

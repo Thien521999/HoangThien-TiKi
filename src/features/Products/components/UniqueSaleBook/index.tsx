@@ -13,7 +13,7 @@ interface UniqueSaleBookProps {
 
 const UniqueSaleBook: React.FC<UniqueSaleBookProps> = ({ data }) => {
   return (
-    <Box>
+    <Box className="unique-sale-book-wrapper-inner">
       <Grid container>
         {data.map((book: any) => (
           <Grid item key={book.id} xs={6} sm={6} md={4} lg={3}>

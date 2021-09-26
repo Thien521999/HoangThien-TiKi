@@ -1,11 +1,8 @@
 // libs
-import { Box, Container } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
-import Tab from '@mui/material/Tab';
-import Tabs from '@mui/material/Tabs';
 import React from 'react';
-import { useHistory } from 'react-router';
 import { NavLink } from 'react-router-dom';
 // others
 import './style.scss';
@@ -19,19 +16,6 @@ const HomeIcon = (props: SvgIconProps) => {
 };
 
 const ChangeTab = () => {
-  const history = useHistory();
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event: any, newValue: number) => {
-    setValue(newValue);
-  };
-
-  const handleClickHome = () => {
-    history.push('/');
-  };
-  const handleClickCart = () => {
-    history.push('/cart');
-  };
   return (
     <Box className="change-tab-wrapper">
       <NavLink to="/" exact className="btn-tab">

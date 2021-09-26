@@ -24,14 +24,14 @@ const ListPage = () => {
   useEffect(() => {
     (async () => {
       const action: any = getListProduct(page);
-      const resultAction = await dispatch(action);
-      const product = unwrapResult(resultAction);
-
       const action2: any = getListFlashSaleBook(page);
-      const resultAction2 = await dispatch(action2);
+
+      const [resultAction, resultAction2] = await Promise.all([dispatch(action), dispatch(action2)]);
+
+      const bookList = unwrapResult(resultAction);
       const listFashSaleBook = unwrapResult(resultAction2);
 
-      setBookList(product);
+      setBookList(bookList);
       setListFlashSaleBook(listFashSaleBook);
       setIsLoading(false);
     })();

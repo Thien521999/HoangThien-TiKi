@@ -1,7 +1,7 @@
 // libs
 import { Box, Tab } from '@material-ui/core';
 import { TabContext, TabList, TabPanel } from '@material-ui/lab';
-import React from 'react';
+import React, { useState } from 'react';
 import image3 from '../../../../images/image3.png';
 // components
 import UniqueSaleBook from '../UniqueSaleBook';
@@ -15,7 +15,7 @@ interface FlashSaleBookProps {
 }
 
 const FlashSaleBook: React.FC<FlashSaleBookProps> = ({ listFashSaleBook, data }) => {
-  const [value, setValue] = React.useState('1');
+  const [value, setValue] = useState('1');
 
   const handleChange = (event: any, newValue: string) => {
     setValue(newValue);
@@ -27,7 +27,7 @@ const FlashSaleBook: React.FC<FlashSaleBookProps> = ({ listFashSaleBook, data })
         <img className="img-flash-sale" src={image3} alt="" />
         <TabContext value={value}>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-            <TabList onChange={handleChange} aria-label="lab API tabs example">
+            <TabList textColor="secondary" onChange={handleChange} aria-label="lab API tabs example">
               <Tab label="10:00" value="1" />
               <Tab label="15:00" value="2" />
               <Tab label="18:00" value="3" />
