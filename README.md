@@ -5,15 +5,20 @@
 Chạy app trong môi trường development.
 truy cập http://localhost:3000 để xem app trong browser.
 
-### `npm test`
 
-Chạy app trong môi trường test
+# Các chức năng đang dùng
 
-### `npm run build`
+-Khởi tạo dự án từ đầu với create-react-app
 
-Build app ở chế độ production trong thư mục build (để deploy lên server)
+-Dùng functional component + Hook
 
-# App được deploy trên vercel
-Link: https://mini-shopping-cart.vercel.app/
+-Quản lý form hiệu quả với React Hook Form
+
+-Làm giao diện nhanh và đơn giản với Material UI
+
+-Quản lý state với Redux Toolkit
+
+-Dùng thư viện axios gọi api lấy danh sách sản phẩm
+
 
 
