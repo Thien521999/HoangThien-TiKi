@@ -13,7 +13,7 @@ import { IInputAddToCartForm } from '../../../Products/components/AddToCartForm'
 // others
 import './style.scss';
 import { BookProps } from '../../../Products/components/Book';
-import { setQuantity } from '../../cartSlice';
+import { removeFromCart, setQuantity } from '../../cartSlice';
 
 const CartDetail: React.FC<BookProps> = ({ book }) => {
   const dispatch = useDispatch();
@@ -36,7 +36,7 @@ const CartDetail: React.FC<BookProps> = ({ book }) => {
   });
 
   const handleChangeQuantity = (newValue: any) => {
-    console.log(newValue);
+    // console.log(newValue);
     const action = setQuantity({
       id: book?.id,
       quantity: newValue,
@@ -45,10 +45,9 @@ const CartDetail: React.FC<BookProps> = ({ book }) => {
   };
 
   const handleRemoveBook = () => {
-    // console.log(book?.id);
-    // const idNeedToRemove = book?.id;
-    // const action = removeFromCart(idNeedToRemove);
-    // dispatch(action);
+    const idNeedToRemove = book?.id;
+    const action = removeFromCart(idNeedToRemove);
+    dispatch(action);
   };
 
   return (
